@@ -42,7 +42,7 @@ The Yellowdog Updater, Modified (YUM) is a free and open-source command-line pac
 
 YUM allows for automatic updates and package and dependency management on RPM-based distributions. Like the Advanced Package Tool (APT) from Debian, YUM works with software repositories (collections of packages), which can be accessed locally or over a network connection.
 
-This step is optional. You can skip this if you will not update YUM.
+This step is optional. You can skip this if we will not update YUM.
 
 ```bash
 yum update -y
