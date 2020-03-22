@@ -1,5 +1,40 @@
 # CentOS 7.7 Minimal Installation as Offline Standalone Server on Raspberry Pi 4
 
+## Download Image
+
+The following mirrors should have the ISO images available:
+
+http://mirror.0x.sg/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror.aktkn.sg/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror.nsw.coloau.com.au/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror.xtom.com.hk/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror-hk.koddos.net/centos-altarch/7.7.1908/isos/armhfp/
+http://mirrors.huaweicloud.com/centos-altarch/7.7.1908/isos/armhfp/
+http://ftp.yz.yamagata-u.ac.jp/pub/linux/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror.genesishosting.com/centos-altarch/7.7.1908/isos/armhfp/
+http://centos-altarch.itsbrasil.net/7.7.1908/isos/armhfp/
+http://mirror.math.princeton.edu/pub/centos-altarch/7.7.1908/isos/armhfp/
+http://centos-altarch.reloumirrors.net/7.7.1908/isos/armhfp/
+http://mirrors.ocf.berkeley.edu/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror.ehv.weppel.nl/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror.dal.nexril.net/centos-altarch/7.7.1908/isos/armhfp/
+http://mirrors.powernet.com.ru/centos-altarch/7.7.1908/isos/armhfp/
+http://mirrors.coreix.net/centos-altarch/7.7.1908/isos/armhfp/
+http://linux.darkpenguin.net/distros/CentOS-AltArch/7.7.1908/isos/armhfp/
+http://centos-altarch.mirror.liquidtelecom.com/7.7.1908/isos/armhfp/
+http://ftp.osuosl.org/pub/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror.atl.genesisadaptive.com/centos-altarch/7.7.1908/isos/armhfp/
+http://mirrors.dotsrc.org/centos-altarch/7.7.1908/isos/armhfp/
+http://mirrors.xtom.com/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror.airenetworks.es/CentOS-AltArch/7.7.1908/isos/armhfp/
+http://ftp.agdsn.de/pub/mirrors/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror.ufs.ac.za/centos-altarch/7.7.1908/isos/armhfp/
+http://quantum-mirror.hu/mirrors/pub/centos-altarch/7.7.1908/isos/armhfp/
+http://mirrors.uniri.hr/centos-altarch/7.7.1908/isos/armhfp/
+http://mirror.yer.az/CentOS-AltArch/7.7.1908/isos/armhfp/
+http://mirror.vcu.edu/pub/gnu_linux/centos-altarch/7.7.1908/isos/armhfp/
+http://ftp.bme.hu/centos-altarch/7.7.1908/isos/armhfp/
+
 ## Update YUM
 
 
