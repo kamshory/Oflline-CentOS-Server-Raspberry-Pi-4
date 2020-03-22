@@ -147,6 +147,26 @@ systemctl enable dhcpd.service
 systemctl start dhcpd.service
 ```
 
+## Setup Ethernet
+
+```bash
+echo -e 'TYPE="Ethernet"' > /etc/sysconfig/ifcfg-eth0
+echo -e 'BOOTPROTO=none' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'NM_CONTROLLED="yes"' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'DEFROUTE="yes"' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'NAME="eth0"' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'UUID="a5ae9a6c-3951-4e8a-b99d-a4ea5dc33bf1"' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'ONBOOT="yes"' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'DNS1=8.8.8.8' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'IPV4_FAILURE_FATAL=no' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'IPV6INIT=no' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'IPADDR=192.168.0.11' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'PREFIX=24' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'GATEWAY=192.168.0.1' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'NETMASK=255.255.255.0' >> /etc/sysconfig/ifcfg-eth0
+echo -e 'DNS2=8.8.4.4' >> /etc/sysconfig/ifcfg-eth0 
+```
+
 ## Install Apahce - PHP - MariaDB
 
 ```bash
