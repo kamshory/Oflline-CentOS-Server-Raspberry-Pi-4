@@ -1,6 +1,6 @@
 # CentOS 7.7 Minimal Installation as Offline Standalone Server on Raspberry Pi 4
 
-Raspberry Pi is a cheap mini PC with very high specs. Besides being able to be used as a desktop PC, Raspberry Pi can also be used as an application server. In offline applications, the server requires a timekeeper that can keep time running even if the server loses power. Unfortunately, Raspberry Pi is not equipped with a real time clock on the board. For that, we need to add our own real time clock module.
+Raspberry Pi is a single board computer with very high specs. Besides being able to be used as a desktop PC, Raspberry Pi can also be used as an application server. In offline applications, the server requires a timekeeper that can keep time running even if the server loses power. Unfortunately, Raspberry Pi is not equipped with a real time clock on the board. For that, we need to add our own real time clock module.
 
 The addition of real time clock requires a real time clock module or RTC and software that will synchronize the time between the Raspberry Pi and the RTC module.
 
