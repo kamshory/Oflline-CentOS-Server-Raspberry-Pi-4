@@ -4,36 +4,36 @@
 
 The following mirrors should have the ISO images available:
 
-http://mirror.0x.sg/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror.aktkn.sg/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror.nsw.coloau.com.au/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror.xtom.com.hk/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror-hk.koddos.net/centos-altarch/7.7.1908/isos/armhfp/
-http://mirrors.huaweicloud.com/centos-altarch/7.7.1908/isos/armhfp/
-http://ftp.yz.yamagata-u.ac.jp/pub/linux/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror.genesishosting.com/centos-altarch/7.7.1908/isos/armhfp/
-http://centos-altarch.itsbrasil.net/7.7.1908/isos/armhfp/
-http://mirror.math.princeton.edu/pub/centos-altarch/7.7.1908/isos/armhfp/
-http://centos-altarch.reloumirrors.net/7.7.1908/isos/armhfp/
-http://mirrors.ocf.berkeley.edu/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror.ehv.weppel.nl/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror.dal.nexril.net/centos-altarch/7.7.1908/isos/armhfp/
-http://mirrors.powernet.com.ru/centos-altarch/7.7.1908/isos/armhfp/
-http://mirrors.coreix.net/centos-altarch/7.7.1908/isos/armhfp/
-http://linux.darkpenguin.net/distros/CentOS-AltArch/7.7.1908/isos/armhfp/
-http://centos-altarch.mirror.liquidtelecom.com/7.7.1908/isos/armhfp/
-http://ftp.osuosl.org/pub/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror.atl.genesisadaptive.com/centos-altarch/7.7.1908/isos/armhfp/
-http://mirrors.dotsrc.org/centos-altarch/7.7.1908/isos/armhfp/
-http://mirrors.xtom.com/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror.airenetworks.es/CentOS-AltArch/7.7.1908/isos/armhfp/
-http://ftp.agdsn.de/pub/mirrors/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror.ufs.ac.za/centos-altarch/7.7.1908/isos/armhfp/
-http://quantum-mirror.hu/mirrors/pub/centos-altarch/7.7.1908/isos/armhfp/
-http://mirrors.uniri.hr/centos-altarch/7.7.1908/isos/armhfp/
-http://mirror.yer.az/CentOS-AltArch/7.7.1908/isos/armhfp/
-http://mirror.vcu.edu/pub/gnu_linux/centos-altarch/7.7.1908/isos/armhfp/
-http://ftp.bme.hu/centos-altarch/7.7.1908/isos/armhfp/
+1. http://mirror.0x.sg/centos-altarch/7.7.1908/isos/armhfp/
+2. http://mirror.aktkn.sg/centos-altarch/7.7.1908/isos/armhfp/
+3. http://mirror.nsw.coloau.com.au/centos-altarch/7.7.1908/isos/armhfp/
+4. http://mirror.xtom.com.hk/centos-altarch/7.7.1908/isos/armhfp/
+5. http://mirror-hk.koddos.net/centos-altarch/7.7.1908/isos/armhfp/
+6. http://mirrors.huaweicloud.com/centos-altarch/7.7.1908/isos/armhfp/
+7. http://ftp.yz.yamagata-u.ac.jp/pub/linux/centos-altarch/7.7.1908/isos/armhfp/
+8. http://mirror.genesishosting.com/centos-altarch/7.7.1908/isos/armhfp/
+9. http://centos-altarch.itsbrasil.net/7.7.1908/isos/armhfp/
+10. http://mirror.math.princeton.edu/pub/centos-altarch/7.7.1908/isos/armhfp/
+11. http://centos-altarch.reloumirrors.net/7.7.1908/isos/armhfp/
+12. http://mirrors.ocf.berkeley.edu/centos-altarch/7.7.1908/isos/armhfp/
+13. http://mirror.ehv.weppel.nl/centos-altarch/7.7.1908/isos/armhfp/
+14. http://mirror.dal.nexril.net/centos-altarch/7.7.1908/isos/armhfp/
+15. http://mirrors.powernet.com.ru/centos-altarch/7.7.1908/isos/armhfp/
+16. http://mirrors.coreix.net/centos-altarch/7.7.1908/isos/armhfp/
+17. http://linux.darkpenguin.net/distros/CentOS-AltArch/7.7.1908/isos/armhfp/
+18. http://centos-altarch.mirror.liquidtelecom.com/7.7.1908/isos/armhfp/
+19. http://ftp.osuosl.org/pub/centos-altarch/7.7.1908/isos/armhfp/
+20. http://mirror.atl.genesisadaptive.com/centos-altarch/7.7.1908/isos/armhfp/
+21. http://mirrors.dotsrc.org/centos-altarch/7.7.1908/isos/armhfp/
+22. http://mirrors.xtom.com/centos-altarch/7.7.1908/isos/armhfp/
+23. http://mirror.airenetworks.es/CentOS-AltArch/7.7.1908/isos/armhfp/
+24. http://ftp.agdsn.de/pub/mirrors/centos-altarch/7.7.1908/isos/armhfp/
+25. http://mirror.ufs.ac.za/centos-altarch/7.7.1908/isos/armhfp/
+26. http://quantum-mirror.hu/mirrors/pub/centos-altarch/7.7.1908/isos/armhfp/
+27. http://mirrors.uniri.hr/centos-altarch/7.7.1908/isos/armhfp/
+28. http://mirror.yer.az/CentOS-AltArch/7.7.1908/isos/armhfp/
+29. http://mirror.vcu.edu/pub/gnu_linux/centos-altarch/7.7.1908/isos/armhfp/
+30. http://ftp.bme.hu/centos-altarch/7.7.1908/isos/armhfp/
 
 ## Update YUM
 
