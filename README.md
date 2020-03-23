@@ -93,7 +93,7 @@ We need add ```dtparam=i2c_arm=on``` and ```dtoverlay=i2c-rtc,ds3231``` to ```/b
 -   **-w, --systohoc :** It will set the RTC from the system time i.e. the opposite of _-s, –hctosys_.
 -   **--systz :** Used to send the timescale configurations to the kernel.
 -   **-a, --adjust :** Adjust the RTC to account for systematic drift.
--   *--predict :** It will predict the drifted RTC time according to –date.
+-   **--predict :** It will predict the drifted RTC time according to –date.
 
 **Options:**
 
