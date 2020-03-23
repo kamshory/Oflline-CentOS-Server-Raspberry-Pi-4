@@ -72,14 +72,10 @@ The DS3231 is a low-cost, extremely accurate I2C real-time clock (RTC) with an i
 
 The DS3231 is available in commercial and industrial temperature ranges, and is offered in a 16-pin, 300-mil SO package.The RTC maintains seconds, minutes, hours, day, date, month, and year information. The date at the end of the month is automatically adjusted for months with fewer than 31 days, including corrections for leap year. The clock operates in either the 24-hour or 12-hour format with an AM/PM indicator. Two programmable time-of-day alarms and a programmable square-wave output are provided. Address and data are transferred serially through an I2C bidirectional bus.
 
-We need to install i2c-tools to read real time clock from the I2C device. After install i2c-tools, we need to create a service to synchronize the real time clock from RTC DS3231 to Raspberry Pi when system is started.
-
 ```bash
 echo -e "dtparam=i2c_arm=on" >> /boot/config.txt
 echo -e "dtoverlay=i2c-rtc,ds3231" >> /boot/config.txt
 echo -e "i2c-dev" >> /etc/modules-load.d/i2c.conf
-yum -y install i2c-tools
-i2cdetect -y 1
 echo -e '[Unit]' > /usr/lib/systemd/system/rtc.service
 echo -e 'Description=rtc' >> /usr/lib/systemd/system/rtc.service
 echo -e '' >> /usr/lib/systemd/system/rtc.service
