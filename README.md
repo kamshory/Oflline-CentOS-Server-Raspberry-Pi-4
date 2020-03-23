@@ -76,7 +76,7 @@ To synchronize time between RTC module and Raspberry Pi, we use hwclock. hwclock
 
 The hardware clock stores the values of: year, month, day, hour, minute, and second. It is not able to store the time standard, local time or Coordinated Universal Time (UTC), nor set the Daylight Saving Time (DST). 
 
-We need to create a service to execute ```We need to create a service to execute ```hwclock -s``` when system is started.
+We need to create a service to execute ```hwclock -s``` when system is started.
 
 ```bash
 echo -e "dtparam=i2c_arm=on" >> /boot/config.txt
