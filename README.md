@@ -86,22 +86,22 @@ We need add ```dtparam=i2c_arm=on``` and ```dtoverlay=i2c-rtc,ds3231``` to ```/b
 ```hwclock [function] [option...]```
 
 **Functions:**
--   **-r, –show :** It will display the RTC time.
--   **–get :** It is used to display the drift corrected RTC time.
--   **–set :** It is used to set the RTC according to –date.
--   **-s, –hctosys :** It will set the system time form the RTC.
--   **-w, –systohoc :** It will set the RTC from the system time i.e. the opposite of _-s, –hctosys_.
--   **–systz :** Used to send the timescale configurations to the kernel.
--   **-a, –adjust :** Adjust the RTC to account for systematic drift.
--   **–predict :** It will predict the drifted RTC time according to –date.
+-   **-r, --show :** It will display the RTC time.
+-   **--get :** It is used to display the drift corrected RTC time.
+-   **--set :** It is used to set the RTC according to –date.
+-   **-s, --hctosys :** It will set the system time form the RTC.
+-   **-w, --systohoc :** It will set the RTC from the system time i.e. the opposite of _-s, –hctosys_.
+-   **--systz :** Used to send the timescale configurations to the kernel.
+-   **-a, --adjust :** Adjust the RTC to account for systematic drift.
+-   *--predict :** It will predict the drifted RTC time according to –date.
 
 **Options:**
 
--   **-u, –utc :** Shows that RTC timescale is UTC.
--   **-l, –localtime :** Shows that RTC timescale is Local.
--   **-D, –debug :** This is used to display the debug information. Information is shown according to the demands of hwclock command.
--   **-V, –version :** Display version information and exit.
--   **-h, –help :** Display help text and exit.
+-   **-u, --utc :** Shows that RTC timescale is UTC.
+-   **-l, --localtime :** Shows that RTC timescale is Local.
+-   **-D, --debug :** This is used to display the debug information. Information is shown according to the demands of hwclock command.
+-   **-V, --version :** Display version information and exit.
+-   **-h, --help :** Display help text and exit.
 
 ### RTC Installation Commands
 
