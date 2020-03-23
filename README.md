@@ -1,3 +1,4 @@
+
 # CentOS 7.7 Minimal Installation as Offline Standalone Server on Raspberry Pi 4
 
 Raspberry Pi is a single board computer with very high specs. Besides being able to be used as a desktop PC, Raspberry Pi can also be used as an application server. In offline applications, the server requires a timekeeper that can keep time running even if the server loses power. Unfortunately, Raspberry Pi is not equipped with a real time clock on the board. For that, we need to add our own real time clock module.
@@ -59,6 +60,8 @@ Sysstat is tool to show the CPU status using command line.
 ZIP is tool to zip files and directories.
 Unzip is tool to extract zipped file.
 
+### Tools Installation Commands
+
 ```bash
 yum install -y nano
 yum install -y sysstat
@@ -77,6 +80,30 @@ To synchronize time between RTC module and Raspberry Pi, we use hwclock. hwclock
 The hardware clock stores the values of: year, month, day, hour, minute, and second. It is not able to store the time standard, local time or Coordinated Universal Time (UTC), nor set the Daylight Saving Time (DST). 
 
 We need add ```dtparam=i2c_arm=on``` and ```dtoverlay=i2c-rtc,ds3231``` to ```/boot/config.txt```, add ```i2c-dev``` to ```/etc/modules-load.d/i2c.conf``` and create a service to execute ```hwclock -s``` when system is started.
+
+**Syntax:**
+
+```hwclock [function] [option...]```
+
+**Functions:**
+-   **-r, –show :** It will display the RTC time.
+-   **–get :** It is used to display the drift corrected RTC time.
+-   **–set :** It is used to set the RTC according to –date.
+-   **-s, –hctosys :** It will set the system time form the RTC.
+-   **-w, –systohoc :** It will set the RTC from the system time i.e. the opposite of _-s, –hctosys_.
+-   **–systz :** Used to send the timescale configurations to the kernel.
+-   **-a, –adjust :** Adjust the RTC to account for systematic drift.
+-   **–predict :** It will predict the drifted RTC time according to –date.
+
+**Options:**
+
+-   **-u, –utc :** Shows that RTC timescale is UTC.
+-   **-l, –localtime :** Shows that RTC timescale is Local.
+-   **-D, –debug :** This is used to display the debug information. Information is shown according to the demands of hwclock command.
+-   **-V, –version :** Display version information and exit.
+-   **-h, –help :** Display help text and exit.
+
+### RTC Installation Commands
 
 ```bash
 echo -e "dtparam=i2c_arm=on" >> /boot/config.txt
@@ -99,6 +126,8 @@ systemctl start rtc.service
 The Dynamic Host Configuration Protocol (DHCP) is a network management protocol used on Internet Protocol networks whereby a DHCP server dynamically assigns an IP address and other network configuration parameters to each device on a network so they can communicate with other IP networks. A DHCP server enables computers to request IP addresses and networking parameters automatically from the Internet service provider (ISP), reducing the need for a network administrator or a user to manually assign IP addresses to all network devices. In the absence of a DHCP server, a computer or other device on the network needs to be manually assigned an IP address, or to assign itself an APIPA address, which will not enable it to communicate outside its local subnet.
 
 DHCP can be implemented on networks ranging in size from home networks to large campus networks and regional Internet service provider networks. A router or a residential gateway can be enabled to act as a DHCP server. Most residential network routers receive a globally unique IP address within the ISP network. Within a local network, a DHCP server assigns a local IP address to each device connected to the network. 
+
+### Access Point with DHCP Installation Commands
 
 ```bash
 yum install -y dhcp
@@ -155,6 +184,8 @@ systemctl start dhcpd.service
 
 ## Setup Ethernet
 
+### Ethernet Setup Commands
+
 ```bash
 echo -e 'TYPE="Ethernet"' > /etc/sysconfig/ifcfg-eth0
 echo -e 'BOOTPROTO=none' >> /etc/sysconfig/ifcfg-eth0
@@ -174,6 +205,8 @@ echo -e 'DNS2=8.8.4.4' >> /etc/sysconfig/ifcfg-eth0
 ```
 
 ## Install Apahce - PHP - MariaDB
+
+### Server Installation Commands
 
 ```bash
 firewall-cmd --permanent --add-port=800/tcp
