@@ -72,6 +72,12 @@ The DS3231 is a low-cost, extremely accurate I2C real-time clock (RTC) with an i
 
 The DS3231 is available in commercial and industrial temperature ranges, and is offered in a 16-pin, 300-mil SO package.The RTC maintains seconds, minutes, hours, day, date, month, and year information. The date at the end of the month is automatically adjusted for months with fewer than 31 days, including corrections for leap year. The clock operates in either the 24-hour or 12-hour format with an AM/PM indicator. Two programmable time-of-day alarms and a programmable square-wave output are provided. Address and data are transferred serially through an I2C bidirectional bus.
 
+To synchronize time between RTC module and Raspberry Pi, we use hwclock. hwclock is a utility for accessing the hardware clock, also referred to as the Real Time Clock (RTC). The hardware clock is independent of the operating system you use and works even when the machine is shut down. This utility is used for displaying the time from the hardware clock. hwclock also contains facilities for compensating for systematic drift in the hardware clock.
+
+The hardware clock stores the values of: year, month, day, hour, minute, and second. It is not able to store the time standard, local time or Coordinated Universal Time (UTC), nor set the Daylight Saving Time (DST). 
+
+We need to create a service to execute ```We need to create a service to execute ```hwclock -s``` when system is started.
+
 ```bash
 echo -e "dtparam=i2c_arm=on" >> /boot/config.txt
 echo -e "dtoverlay=i2c-rtc,ds3231" >> /boot/config.txt
