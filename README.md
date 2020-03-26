@@ -40,6 +40,8 @@ The following mirrors should have the ISO images available:
 29. http://mirror.vcu.edu/pub/gnu_linux/centos-altarch/7.7.1908/isos/armhfp/
 30. http://ftp.bme.hu/centos-altarch/7.7.1908/isos/armhfp/
 
+You can use newer version of CentOS
+
 ## Update YUM
 
 
