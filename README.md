@@ -133,7 +133,7 @@ DHCP can be implemented on networks ranging in size from home networks to large 
 
 ```bash
 yum install -y dhcp
-echo -e 'ESSID=PicoEdu' > /etc/sysconfig/network-scripts/ifcfg-wlan0
+echo -e 'ESSID=PlanetPOS' > /etc/sysconfig/network-scripts/ifcfg-wlan0
 echo -e 'MODE=Ap' >> /etc/sysconfig/network-scripts/ifcfg-wlan0
 echo -e 'KEY_MGMT=WPA-PSK' >> /etc/sysconfig/network-scripts/ifcfg-wlan0
 echo -e 'MAC_ADDRESS_RANDOMIZATION=default' >> /etc/sysconfig/network-scripts/ifcfg-wlan0
