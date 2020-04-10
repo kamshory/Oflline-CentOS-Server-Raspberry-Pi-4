@@ -213,7 +213,6 @@ If our applications are written in PHP and using MariaDB database, we need to in
 ### Server Installation Commands
 
 ```bash
-firewall-cmd --permanent --add-port=800/tcp
 firewall-cmd --permanent --add-port=80/tcp
 yum install -y httpd
 yum install -y mariadb-server mariadb
