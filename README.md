@@ -208,6 +208,8 @@ echo -e 'DNS2=8.8.4.4' >> /etc/sysconfig/ifcfg-eth0
 
 ## Install Apahce - PHP - MariaDB
 
+If our applications are written in PHP and using MariaDB database, we need to install Apache Web Server, PHP Runtime and MariaDB Database Server.
+
 ### Server Installation Commands
 
 ```bash
